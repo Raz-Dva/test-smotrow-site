@@ -1,0 +1,49 @@
+.few-our-clients {
+  padding: 90px 95px;
+  padding-bottom: 62px;
+  .title {
+    margin-bottom: 60px;
+  }
+  .list-clients {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .item {
+      width: 334px;
+      .description {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        color: #606060;
+      }
+      .link {
+        a {
+          font-size: 15px;
+          font-weight: 600;
+          color: black;
+          transition: 0.3s ease;
+          &:hover {
+            color: rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 769px) {
+    padding: 0!important;
+    .title {
+      margin-bottom: 63px;
+    }
+    .list-clients {
+      flex-wrap: wrap;
+      width: 100%;
+      .item {
+        min-width: 334px;
+        width: 100%;
+        margin-bottom: 60px;
+        .description {
+          margin-bottom: 35px;
+        }
+      }
+    }
+  }
+}
